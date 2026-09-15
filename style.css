@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+/* NAVBAR */
+
+header {
+    background: #111827;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hello {
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.secondary {
+    background: white;
+    color: #111827;
+    border: 2px solid #111827;
+}
+
+
+/* HERO BOX */
+
+.hero-box {
+    width: 300px;
+    height: 300px;
+    background: #111827;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.code-box {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+}
+
+
+/* ABOUT */
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card,
+.project-card {
+    width: 280px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3,
+.project-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p,
+.project-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/* PROJECTS */
+
+.project-card {
+    width: 320px;
+}
+
+.tech {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.project-link {
+    color: #111827;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* SERVICES */
+
+.service strong {
+    display: block;
+    margin-top: 20px;
+}
+
+
+/* CONTACT */
+
+#contact {
+    background: white;
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-box {
+        width: 250px;
+        height: 250px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    section {
+        padding: 80px 10%;
+        scroll-margin-top: 100px;
+    }
+
+}
